@@ -1,5 +1,6 @@
 package com.sample.module;
 
+import com.sample.UserScope;
 import com.sample.interfaces.GitHubInterFaces;
 
 import dagger.Module;
@@ -14,6 +15,7 @@ import retrofit2.Retrofit;
 public class GitHubModule {
 
     @Provides
+    @UserScope
     public GitHubInterFaces providesGitHubInterface(Retrofit retrofit) {
         return retrofit.create(GitHubInterFaces.class);
     }

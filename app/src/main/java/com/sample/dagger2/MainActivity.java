@@ -7,12 +7,10 @@ import com.sample.interfaces.GitHubInterFaces;
 
 import javax.inject.Inject;
 
-import retrofit2.Retrofit;
-
 public class MainActivity extends AppCompatActivity {
 
-    @Inject
-    Retrofit mRetrofit;
+//    @Inject
+//    Retrofit mRetrofit;
 
     @Inject
     GitHubInterFaces gitHubInterFaces;
