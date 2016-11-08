@@ -16,6 +16,8 @@ import com.sample.module.NetModule;
 
 public class MyApplication extends Application {
     private NetComponent netComponent;
+
+
     private GitHubComponent mGitHubComponent;
 
     @Override
@@ -38,5 +40,9 @@ public class MyApplication extends Application {
 
     public NetComponent getNetComponent() {
         return netComponent;
+    }
+
+    public GitHubComponent getmGitHubComponent() {
+        return mGitHubComponent;
     }
 }

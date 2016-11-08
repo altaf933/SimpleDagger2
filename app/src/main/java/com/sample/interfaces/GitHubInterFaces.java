@@ -1,11 +1,10 @@
 package com.sample.interfaces;
 
-import android.database.Observable;
-
 import com.sample.model.Repository;
 
-import java.util.List;
+import java.util.ArrayList;
 
+import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.Path;
@@ -17,5 +16,5 @@ import retrofit2.http.Path;
 public interface GitHubInterFaces {
     @GET("/users/{user}/repos")
     @Headers("User-Agent: DaggerDemo")
-    Observable<List<Repository>> listRepos(@Path("user") String user);
+    Call<ArrayList<Repository>> listRepos(@Path("user") String user);
 }
